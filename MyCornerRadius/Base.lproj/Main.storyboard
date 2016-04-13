@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="djz-aZ-VA1">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,203 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kgm-sX-aeE">
+                                <rect key="frame" x="268" y="217" width="64" height="30"/>
+                                <state key="normal" title="Method 1"/>
+                                <connections>
+                                    <segue destination="EuL-gQ-Nf4" kind="show" id="Axn-uh-Fg2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kS4-cJ-kga">
+                                <rect key="frame" x="250" y="297" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="L6s-3G-4BX"/>
+                                    <constraint firstAttribute="width" constant="100" id="YwW-OT-LdB"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyM-Cd-bCb">
+                                <rect key="frame" x="267" y="165" width="66" height="30"/>
+                                <state key="normal" title="Method 0"/>
+                                <connections>
+                                    <segue destination="P0q-t7-Fyc" kind="show" id="aHP-0d-B3C"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kS4-cJ-kga" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="47" id="2DZ-MF-aWX"/>
+                            <constraint firstItem="pyM-Cd-bCb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HkR-Ox-Ybc"/>
+                            <constraint firstItem="Kgm-sX-aeE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-68" id="IVB-Et-eci"/>
+                            <constraint firstItem="kS4-cJ-kga" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P4Y-o5-NxR"/>
+                            <constraint firstItem="pyM-Cd-bCb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="101" id="PeB-yv-JSC"/>
+                            <constraint firstItem="Kgm-sX-aeE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lSk-4V-yHC"/>
+                            <constraint firstItem="pyM-Cd-bCb" firstAttribute="leading" secondItem="Kgm-sX-aeE" secondAttribute="leading" constant="-1" id="ocA-5k-jjn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ocA-5k-jjn"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="8LQ-E7-lL9"/>
+                    <connections>
+                        <outlet property="myDogImageView" destination="kS4-cJ-kga" id="PgD-p0-1xL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="673" y="393"/>
+        </scene>
+        <!--Method Zero Table View Controller-->
+        <scene sceneID="6yD-2c-6vp">
+            <objects>
+                <tableViewController id="P0q-t7-Fyc" customClass="MethodZeroTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="R0i-lJ-iRb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="85" id="8Bv-Zj-9tq" customClass="UIImageViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Bv-Zj-9tq" id="OzQ-S5-m4Y">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smileDog" translatesAutoresizingMaskIntoConstraints="NO" id="t9n-qQ-cXH">
+                                            <rect key="frame" x="35" y="12" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="97m-85-y9m"/>
+                                                <constraint firstAttribute="height" constant="60" id="Wk7-bs-7M9"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myDog" translatesAutoresizingMaskIntoConstraints="NO" id="sLM-oP-qT3">
+                                            <rect key="frame" x="270" y="12" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="COG-6k-n2l"/>
+                                                <constraint firstAttribute="height" constant="60" id="Pp6-2G-L60"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smileDog" translatesAutoresizingMaskIntoConstraints="NO" id="6lZ-br-ubd">
+                                            <rect key="frame" x="507" y="12" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="Ocl-KM-oiy"/>
+                                                <constraint firstAttribute="height" constant="60" id="sbA-MN-8bQ"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="6lZ-br-ubd" firstAttribute="centerY" secondItem="OzQ-S5-m4Y" secondAttribute="centerY" id="3le-1t-Szh"/>
+                                        <constraint firstItem="t9n-qQ-cXH" firstAttribute="leading" secondItem="OzQ-S5-m4Y" secondAttribute="leading" constant="35" id="GQN-B8-PUV"/>
+                                        <constraint firstItem="t9n-qQ-cXH" firstAttribute="centerY" secondItem="OzQ-S5-m4Y" secondAttribute="centerY" id="Hh4-PA-n27"/>
+                                        <constraint firstItem="sLM-oP-qT3" firstAttribute="centerX" secondItem="OzQ-S5-m4Y" secondAttribute="centerX" id="a6f-hr-iBf"/>
+                                        <constraint firstItem="sLM-oP-qT3" firstAttribute="centerY" secondItem="OzQ-S5-m4Y" secondAttribute="centerY" id="b2g-qO-0kC"/>
+                                        <constraint firstAttribute="trailing" secondItem="6lZ-br-ubd" secondAttribute="trailing" constant="33" id="jWQ-oa-0tU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageOne" destination="t9n-qQ-cXH" id="zcn-Gg-idL"/>
+                                    <outlet property="imageThree" destination="6lZ-br-ubd" id="RQv-AK-Thk"/>
+                                    <outlet property="imageTwo" destination="sLM-oP-qT3" id="38u-2s-Hol"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="P0q-t7-Fyc" id="hct-Hj-uR1"/>
+                            <outlet property="delegate" destination="P0q-t7-Fyc" id="P22-Yx-Lvg"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yH6-aO-GTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1380" y="264"/>
+        </scene>
+        <!--Method One Table View Controller-->
+        <scene sceneID="UTm-7R-PXD">
+            <objects>
+                <tableViewController id="EuL-gQ-Nf4" customClass="MethodOneTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" id="iej-1i-CCa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="85" id="ba6-fh-0ce" customClass="UIImageViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ba6-fh-0ce" id="f5a-Ad-aZ1">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smileDog" translatesAutoresizingMaskIntoConstraints="NO" id="Jod-8P-WwV">
+                                            <rect key="frame" x="35" y="12" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="a9Q-lf-Y5y"/>
+                                                <constraint firstAttribute="height" constant="60" id="be5-6x-7Cf"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myDog" translatesAutoresizingMaskIntoConstraints="NO" id="U5a-yn-IkV">
+                                            <rect key="frame" x="270" y="12" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="Fmo-eM-WUP"/>
+                                                <constraint firstAttribute="height" constant="60" id="bzR-4p-rUa"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smileDog" translatesAutoresizingMaskIntoConstraints="NO" id="c58-wP-Yhm">
+                                            <rect key="frame" x="507" y="12" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="KGM-yZ-6Eh"/>
+                                                <constraint firstAttribute="width" constant="60" id="gdt-Gt-0UY"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="c58-wP-Yhm" firstAttribute="centerY" secondItem="f5a-Ad-aZ1" secondAttribute="centerY" id="2OQ-TP-xjC"/>
+                                        <constraint firstItem="Jod-8P-WwV" firstAttribute="centerY" secondItem="f5a-Ad-aZ1" secondAttribute="centerY" id="36t-1S-uMI"/>
+                                        <constraint firstItem="Jod-8P-WwV" firstAttribute="leading" secondItem="f5a-Ad-aZ1" secondAttribute="leading" constant="35" id="4kR-Mh-vn8"/>
+                                        <constraint firstAttribute="trailing" secondItem="c58-wP-Yhm" secondAttribute="trailing" constant="33" id="XuR-FG-JGE"/>
+                                        <constraint firstItem="U5a-yn-IkV" firstAttribute="centerY" secondItem="f5a-Ad-aZ1" secondAttribute="centerY" id="fut-dr-zP1"/>
+                                        <constraint firstItem="U5a-yn-IkV" firstAttribute="centerX" secondItem="f5a-Ad-aZ1" secondAttribute="centerX" id="vwz-qv-67O"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageOne" destination="Jod-8P-WwV" id="FH1-85-0ud"/>
+                                    <outlet property="imageThree" destination="c58-wP-Yhm" id="8xX-c8-ea6"/>
+                                    <outlet property="imageTwo" destination="U5a-yn-IkV" id="06V-BV-ugl"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EuL-gQ-Nf4" id="kYb-bX-3KY"/>
+                            <outlet property="delegate" destination="EuL-gQ-Nf4" id="bWE-Xc-34X"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DGS-wc-Aem" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1383" y="883"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tNB-4j-XfV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="djz-aZ-VA1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZS9-ZZ-Sx9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NsA-0w-7Ih"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ot2-Ls-EyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-139" y="393"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="myDog" width="100" height="100"/>
+        <image name="smileDog" width="100" height="100"/>
+    </resources>
 </document>

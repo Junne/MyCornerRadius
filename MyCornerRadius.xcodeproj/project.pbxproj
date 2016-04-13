@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F52EBEA71CBE3AC30021531D /* MethodOneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52EBEA61CBE3AC30021531D /* MethodOneTableViewController.m */; };
+		F52EBEAA1CBE3C2E0021531D /* UIImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F52EBEA91CBE3C2E0021531D /* UIImageViewCell.m */; };
+		F52EBEAD1CBE3F0D0021531D /* MethodZeroTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52EBEAC1CBE3F0D0021531D /* MethodZeroTableViewController.m */; };
 		F5778F681CA948FE00C2D045 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5778F671CA948FE00C2D045 /* main.m */; };
 		F5778F6B1CA948FE00C2D045 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5778F6A1CA948FE00C2D045 /* AppDelegate.m */; };
 		F5778F6E1CA948FE00C2D045 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5778F6D1CA948FE00C2D045 /* ViewController.m */; };
@@ -15,6 +18,7 @@
 		F5778F761CA948FE00C2D045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5778F741CA948FE00C2D045 /* LaunchScreen.storyboard */; };
 		F5778F811CA948FE00C2D045 /* MyCornerRadiusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5778F801CA948FE00C2D045 /* MyCornerRadiusTests.m */; };
 		F5778F8C1CA948FE00C2D045 /* MyCornerRadiusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5778F8B1CA948FE00C2D045 /* MyCornerRadiusUITests.m */; };
+		F5778F9B1CA94C4300C2D045 /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = F5778F9A1CA94C4300C2D045 /* UIImageView+CornerRadius.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F52EBEA51CBE3AC30021531D /* MethodOneTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodOneTableViewController.h; sourceTree = "<group>"; };
+		F52EBEA61CBE3AC30021531D /* MethodOneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodOneTableViewController.m; sourceTree = "<group>"; };
+		F52EBEA81CBE3C2E0021531D /* UIImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewCell.h; sourceTree = "<group>"; };
+		F52EBEA91CBE3C2E0021531D /* UIImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewCell.m; sourceTree = "<group>"; };
+		F52EBEAB1CBE3F0D0021531D /* MethodZeroTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodZeroTableViewController.h; sourceTree = "<group>"; };
+		F52EBEAC1CBE3F0D0021531D /* MethodZeroTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodZeroTableViewController.m; sourceTree = "<group>"; };
 		F5778F631CA948FE00C2D045 /* MyCornerRadius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCornerRadius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5778F671CA948FE00C2D045 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5778F691CA948FE00C2D045 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +61,8 @@
 		F5778F871CA948FE00C2D045 /* MyCornerRadiusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCornerRadiusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5778F8B1CA948FE00C2D045 /* MyCornerRadiusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCornerRadiusUITests.m; sourceTree = "<group>"; };
 		F5778F8D1CA948FE00C2D045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5778F991CA94C4300C2D045 /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
+		F5778F9A1CA94C4300C2D045 /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +115,16 @@
 			children = (
 				F5778F691CA948FE00C2D045 /* AppDelegate.h */,
 				F5778F6A1CA948FE00C2D045 /* AppDelegate.m */,
+				F52EBEA81CBE3C2E0021531D /* UIImageViewCell.h */,
+				F52EBEA91CBE3C2E0021531D /* UIImageViewCell.m */,
 				F5778F6C1CA948FE00C2D045 /* ViewController.h */,
 				F5778F6D1CA948FE00C2D045 /* ViewController.m */,
+				F52EBEAB1CBE3F0D0021531D /* MethodZeroTableViewController.h */,
+				F52EBEAC1CBE3F0D0021531D /* MethodZeroTableViewController.m */,
+				F52EBEA51CBE3AC30021531D /* MethodOneTableViewController.h */,
+				F52EBEA61CBE3AC30021531D /* MethodOneTableViewController.m */,
+				F5778F991CA94C4300C2D045 /* UIImageView+CornerRadius.h */,
+				F5778F9A1CA94C4300C2D045 /* UIImageView+CornerRadius.m */,
 				F5778F6F1CA948FE00C2D045 /* Main.storyboard */,
 				F5778F721CA948FE00C2D045 /* Assets.xcassets */,
 				F5778F741CA948FE00C2D045 /* LaunchScreen.storyboard */,
@@ -270,9 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52EBEA71CBE3AC30021531D /* MethodOneTableViewController.m in Sources */,
 				F5778F6E1CA948FE00C2D045 /* ViewController.m in Sources */,
+				F5778F9B1CA94C4300C2D045 /* UIImageView+CornerRadius.m in Sources */,
 				F5778F6B1CA948FE00C2D045 /* AppDelegate.m in Sources */,
+				F52EBEAA1CBE3C2E0021531D /* UIImageViewCell.m in Sources */,
 				F5778F681CA948FE00C2D045 /* main.m in Sources */,
+				F52EBEAD1CBE3F0D0021531D /* MethodZeroTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyCornerRadius/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.junne.MyCornerRadius;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyCornerRadius/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.junne.MyCornerRadius;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +522,7 @@
 				F5778F921CA948FE00C2D045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5778F931CA948FE00C2D045 /* Build configuration list for PBXNativeTarget "MyCornerRadiusTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +531,7 @@
 				F5778F951CA948FE00C2D045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5778F961CA948FE00C2D045 /* Build configuration list for PBXNativeTarget "MyCornerRadiusUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +540,7 @@
 				F5778F981CA948FE00C2D045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

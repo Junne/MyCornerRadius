@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "UIImageView+CornerRadius.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *myDogImageView;
 
 @end
 
@@ -16,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.myDogImageView.image = [UIImage imageNamed:@"smileDog"];
+    [self.myDogImageView bf_addCornerRadius:50];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
