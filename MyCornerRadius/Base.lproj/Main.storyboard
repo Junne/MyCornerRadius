@@ -38,14 +38,24 @@
                                     <segue destination="P0q-t7-Fyc" kind="show" id="aHP-0d-B3C"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7V-26-vE4">
+                                <rect key="frame" x="250" y="433" width="100" height="30"/>
+                                <state key="normal" title="Method 2"/>
+                                <connections>
+                                    <segue destination="kgc-U0-h7C" kind="show" id="j1N-US-pWv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kS4-cJ-kga" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="47" id="2DZ-MF-aWX"/>
+                            <constraint firstItem="S7V-26-vE4" firstAttribute="top" secondItem="kS4-cJ-kga" secondAttribute="bottom" constant="36" id="8CQ-XY-5GC"/>
+                            <constraint firstItem="S7V-26-vE4" firstAttribute="leading" secondItem="kS4-cJ-kga" secondAttribute="leading" id="G6J-RW-25q"/>
                             <constraint firstItem="pyM-Cd-bCb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HkR-Ox-Ybc"/>
                             <constraint firstItem="Kgm-sX-aeE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-68" id="IVB-Et-eci"/>
                             <constraint firstItem="kS4-cJ-kga" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P4Y-o5-NxR"/>
                             <constraint firstItem="pyM-Cd-bCb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="101" id="PeB-yv-JSC"/>
+                            <constraint firstItem="S7V-26-vE4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fJ1-Oh-C5x"/>
                             <constraint firstItem="Kgm-sX-aeE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lSk-4V-yHC"/>
                             <constraint firstItem="pyM-Cd-bCb" firstAttribute="leading" secondItem="Kgm-sX-aeE" secondAttribute="leading" constant="-1" id="ocA-5k-jjn"/>
                         </constraints>
@@ -62,7 +72,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="673" y="393"/>
+            <point key="canvasLocation" x="450" y="259"/>
+        </scene>
+        <!--Method Two Table View Controller-->
+        <scene sceneID="BcW-Ry-oeu">
+            <objects>
+                <tableViewController id="kgc-U0-h7C" customClass="MethodTwoTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JOV-YY-MF0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageCell" rowHeight="85" id="erx-Hr-6cZ" customClass="UIImageViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="erx-Hr-6cZ" id="h7w-M4-kcd">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smileDog" translatesAutoresizingMaskIntoConstraints="NO" id="JXM-eV-n4p">
+                                            <rect key="frame" x="35" y="12" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="I7x-hC-es4"/>
+                                                <constraint firstAttribute="width" constant="60" id="QdM-oN-bzE"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myDog" translatesAutoresizingMaskIntoConstraints="NO" id="jyE-S2-DvN">
+                                            <rect key="frame" x="270" y="12" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="bTV-7w-DTH"/>
+                                                <constraint firstAttribute="height" constant="60" id="chX-gI-QNC"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smileDog" translatesAutoresizingMaskIntoConstraints="NO" id="8xD-WU-epF">
+                                            <rect key="frame" x="507" y="12" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="UyJ-Nr-W1z"/>
+                                                <constraint firstAttribute="height" constant="60" id="y9J-5u-L1b"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="JXM-eV-n4p" firstAttribute="centerY" secondItem="h7w-M4-kcd" secondAttribute="centerY" id="Cfd-Ya-zOS"/>
+                                        <constraint firstItem="jyE-S2-DvN" firstAttribute="centerX" secondItem="h7w-M4-kcd" secondAttribute="centerX" id="NQe-C0-oWm"/>
+                                        <constraint firstItem="JXM-eV-n4p" firstAttribute="leading" secondItem="h7w-M4-kcd" secondAttribute="leading" constant="35" id="O1R-nL-eVD"/>
+                                        <constraint firstItem="8xD-WU-epF" firstAttribute="centerY" secondItem="h7w-M4-kcd" secondAttribute="centerY" id="Tdh-AA-vEz"/>
+                                        <constraint firstAttribute="trailing" secondItem="8xD-WU-epF" secondAttribute="trailing" constant="33" id="ioG-3E-CJC"/>
+                                        <constraint firstItem="jyE-S2-DvN" firstAttribute="centerY" secondItem="h7w-M4-kcd" secondAttribute="centerY" id="tJo-sR-Ltv"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageOne" destination="JXM-eV-n4p" id="aco-vV-VGl"/>
+                                    <outlet property="imageThree" destination="8xD-WU-epF" id="OMe-bd-rln"/>
+                                    <outlet property="imageTwo" destination="jyE-S2-DvN" id="ZRk-Fq-OeD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kgc-U0-h7C" id="S1n-ZI-pFy"/>
+                            <outlet property="delegate" destination="kgc-U0-h7C" id="q7O-EF-EHO"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGC-J0-Cy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1115" y="813"/>
         </scene>
         <!--Method Zero Table View Controller-->
         <scene sceneID="6yD-2c-6vp">
@@ -126,7 +200,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yH6-aO-GTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1380" y="264"/>
+            <point key="canvasLocation" x="1308" y="956"/>
         </scene>
         <!--Method One Table View Controller-->
         <scene sceneID="UTm-7R-PXD">
@@ -190,7 +264,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGS-wc-Aem" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383" y="883"/>
+            <point key="canvasLocation" x="592" y="1219"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tNB-4j-XfV">

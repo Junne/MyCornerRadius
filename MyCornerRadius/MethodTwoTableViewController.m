@@ -1,20 +1,19 @@
 //
-//  MethodOneTableViewController.m
+//  MethodTwoTableViewController.m
 //  MyCornerRadius
 //
 //  Created by baijf on 4/13/16.
 //  Copyright © 2016 Junne. All rights reserved.
 //
 
-#import "MethodOneTableViewController.h"
+#import "MethodTwoTableViewController.h"
 #import "UIImageViewCell.h"
-#import "UIImageView+CornerRadius.h"
 
-@interface MethodOneTableViewController ()
+@interface MethodTwoTableViewController ()
 
 @end
 
-@implementation MethodOneTableViewController
+@implementation MethodTwoTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,12 +41,20 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     UIImageViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"imageCell" forIndexPath:indexPath];
-    [cell.imageOne bf_addCornerRadius:30.0];
-    [cell.imageTwo bf_addCornerRadius:30.0];
-    [cell.imageThree bf_addCornerRadius:30.0];
+    CALayer *maskLayer = [[CALayer alloc] init];
+    maskLayer.frame = CGRectMake(0, 0, 60, 60);
+    maskLayer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"appIcon_placeholder"].CGImage);
+    cell.imageOne.layer.mask = maskLayer; // iOS 7
+    cell.imageTwo.maskView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"appIcon_placeholder"]]; // iOS 8
+    cell.imageThree.maskView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"appIcon_placeholder"]];
+    
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 85.0;
 }
 
 /*

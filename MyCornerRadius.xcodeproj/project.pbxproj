@@ -10,6 +10,7 @@
 		F52EBEA71CBE3AC30021531D /* MethodOneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52EBEA61CBE3AC30021531D /* MethodOneTableViewController.m */; };
 		F52EBEAA1CBE3C2E0021531D /* UIImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F52EBEA91CBE3C2E0021531D /* UIImageViewCell.m */; };
 		F52EBEAD1CBE3F0D0021531D /* MethodZeroTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52EBEAC1CBE3F0D0021531D /* MethodZeroTableViewController.m */; };
+		F52EBEB01CBE634F0021531D /* MethodTwoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52EBEAF1CBE634F0021531D /* MethodTwoTableViewController.m */; };
 		F5778F681CA948FE00C2D045 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5778F671CA948FE00C2D045 /* main.m */; };
 		F5778F6B1CA948FE00C2D045 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5778F6A1CA948FE00C2D045 /* AppDelegate.m */; };
 		F5778F6E1CA948FE00C2D045 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5778F6D1CA948FE00C2D045 /* ViewController.m */; };
@@ -45,6 +46,8 @@
 		F52EBEA91CBE3C2E0021531D /* UIImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewCell.m; sourceTree = "<group>"; };
 		F52EBEAB1CBE3F0D0021531D /* MethodZeroTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodZeroTableViewController.h; sourceTree = "<group>"; };
 		F52EBEAC1CBE3F0D0021531D /* MethodZeroTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodZeroTableViewController.m; sourceTree = "<group>"; };
+		F52EBEAE1CBE634F0021531D /* MethodTwoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodTwoTableViewController.h; sourceTree = "<group>"; };
+		F52EBEAF1CBE634F0021531D /* MethodTwoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodTwoTableViewController.m; sourceTree = "<group>"; };
 		F5778F631CA948FE00C2D045 /* MyCornerRadius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCornerRadius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5778F671CA948FE00C2D045 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5778F691CA948FE00C2D045 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				F52EBEAC1CBE3F0D0021531D /* MethodZeroTableViewController.m */,
 				F52EBEA51CBE3AC30021531D /* MethodOneTableViewController.h */,
 				F52EBEA61CBE3AC30021531D /* MethodOneTableViewController.m */,
+				F52EBEAE1CBE634F0021531D /* MethodTwoTableViewController.h */,
+				F52EBEAF1CBE634F0021531D /* MethodTwoTableViewController.m */,
 				F5778F991CA94C4300C2D045 /* UIImageView+CornerRadius.h */,
 				F5778F9A1CA94C4300C2D045 /* UIImageView+CornerRadius.m */,
 				F5778F6F1CA948FE00C2D045 /* Main.storyboard */,
@@ -293,6 +298,7 @@
 				F52EBEA71CBE3AC30021531D /* MethodOneTableViewController.m in Sources */,
 				F5778F6E1CA948FE00C2D045 /* ViewController.m in Sources */,
 				F5778F9B1CA94C4300C2D045 /* UIImageView+CornerRadius.m in Sources */,
+				F52EBEB01CBE634F0021531D /* MethodTwoTableViewController.m in Sources */,
 				F5778F6B1CA948FE00C2D045 /* AppDelegate.m in Sources */,
 				F52EBEAA1CBE3C2E0021531D /* UIImageViewCell.m in Sources */,
 				F5778F681CA948FE00C2D045 /* main.m in Sources */,
